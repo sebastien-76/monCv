@@ -1,20 +1,21 @@
 {
     "basics": {
         "name": "Sébastien MAILLET",
-        "label": "Programmer",
-        "image": "",
+        "label": "Développeur web et web mobile",
+        "image": "/assets/images/portrait.jpg",
         "email": "sebastien.maillet@gmail.com",
-        "phone": "(912) 555-4321",
-        "url": "https://sebastienmaillet.fr",
-        "summary": "A summary of John Doe…",
+        "phone": "06 16 98 56 38",
+        "url": "https://sebastienmaillet.fr",   
+        "summary": "En recherche d'une alternance en développement informatique",
         "location": {
             "city": "HULLUCH",
-            "countryCode": "FR"
+            "countryCode": "FR",
+            "region": "Hauts de France"
         },
         "profiles": [
             {
                 "network": "linkedin",
-                "url": "www.linkedin.com/in/sébastien-maillet"
+                "url": "https://www.linkedin.com/in/sébastien-maillet"
             },
             {
                 "network": "github",
@@ -24,68 +25,57 @@
     },
     "work": [
         {
-            "name": "Company",
-            "position": "President",
-            "url": "https://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description…",
+            "name": "Boulanger Philippe, commerçant ambulant",
+            "position": "Développeur web",
+            "startDate": "Octobre 2023",
+            "endDate": "Novembre 2023",
+            "summary": "Réalisation d’un site web responsive ( HTML, CSS, React ), Réalisation d'une interface d’administration de gestion de contenu ( Symfony, EasyAdmin, ApiPlatform, Mariadb )",
             "highlights": [
-                "Started the company"
+                "Dans l'attente du commercant pour terminer le site"
             ]
-        }
-    ],
-    "volunteer": [
+        },
         {
-            "organization": "Organization",
-            "position": "Volunteer",
-            "url": "https://organization.com/",
-            "startDate": "2012-01-01",
-            "endDate": "2013-01-01",
-            "summary": "Description…",
+            "name": "Caviste indépendant",
+            "position": "Gérant",
+            "startDate": "Mai 2009",
+            "endDate": "Octobre 2022",
+            "summary": "Contrôle et surveillance des opérations d'exploitation, Détection et résolution des incidents, ou escalade si nécessaire, Responsable d'une équipe de six personnes",
             "highlights": [
-                "Awarded 'Volunteer of the Month'"
+                "Unix ( AIX, HP-UX, Sun OS ) - Oracle - Control M - Tivoli"
+            ]
+        },
+        {
+            "name": "Analyste d'exploitation en mission chez SFR",
+            "position": "Technicien d'exploiatation",
+            "startDate": "Avril 2001",
+            "endDate": "Mars 2009",
+            "summary": "Gestion d'un commerce de proximité",
+            "highlights": [
+                "Achats / ventes, optimisation des coûts - Suivi CA et gestion des stocks - Animations et relations client"
             ]
         }
     ],
     "education": [
         {
-            "institution": "University",
-            "url": "https://institution.com/",
-            "area": "Software Development",
-            "studyType": "Bachelor",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
-            "score": "4.0",
+            "institution": "Pop School",
+            "area": "Développeur Web et Web Mobile",
+            "studyType": "Titre professionnel",
+            "startDate": "Mai 2023",
+            "endDate": "Septembre 2023",
             "courses": [
-                "DB1101 - Basic SQL"
+                "HTML - CSS - Python - Javascript - React - Mariadb - PHP - Symfony - Git - Docker"
+            ]
+        },
+        {
+            "institution": "Sixun informatique",
+            "area": "Administration système, base de données, réseau",
+            "startDate": "Février 2001",
+            "endDate": "Mars 2001",
+            "courses": [
+                "Administration de la base de données"
             ]
         }
-    ],
-    "awards": [
-        {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
-        }
-    ],
-    "certificates": [
-        {
-            "name": "Certificate",
-            "date": "2021-11-07",
-            "issuer": "Company",
-            "url": "https://certificate.com"
-        }
-    ],
-    "publications": [
-        {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "url": "https://publication.com",
-            "summary": "Description…"
-        }
+
     ],
     "skills": [
         {
@@ -111,24 +101,6 @@
                 "Ferrets",
                 "Unicorns"
             ]
-        }
-    ],
-    "references": [
-        {
-            "name": "Jane Doe",
-            "reference": "Reference…"
-        }
-    ],
-    "projects": [
-        {
-            "name": "Project",
-            "startDate": "2019-01-01",
-            "endDate": "2021-01-01",
-            "description": "Description...",
-            "highlights": [
-                "Won award at AIHacks 2016"
-            ],
-            "url": "https://project.com/"
         }
     ]
 }

@@ -1,0 +1,24 @@
+<section class="bg-gray-900 text-white">
+	<div class="space-y-2 mx-auto max-w-3xl text-center">
+		<h2 class="text-3xl font-bold sm:text-4xl py-4">Expériences professionnelles</h2>
+		{% for work in cv.work %}
+			<article class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition mx-4">
+				<div class="rounded-[10px] bg-gray-200 p-4 dark:bg-gray-900 sm:p-6">
+					<p class="block text-sm text-gray-500 dark:text-gray-400">
+						{{ work.startDate }}
+						à
+						{{ work.endDate }}
+					</p>
+					<h3 class="mt-0.5 text-xl font-medium text-gray-900 dark:text-white">
+						{{ work.position }}
+						-
+						{{ work.name }}
+					</h3>
+                    <p class="block text-base text-gray-600 dark:text-gray-300">
+                        {{ work.summary }}
+                    </p>
+				</div>
+			</article>
+		{% endfor %}
+	</div>
+</section>

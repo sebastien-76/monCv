@@ -1,0 +1,92 @@
+<section class="bg-gray-900 text-white mx-auto">
+	<div class=" lg:flex lg:h-screen lg:items-center flex-col py-28">
+		<div class="mx-auto max-w-3xl text-center pb-6 w-screen h-1/3">
+			<h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl p-6">
+				{{ cv.basics.name }}
+			</h1>
+
+			<h2 class="text-2xl font-extrabold sm:text-4xl px-4">
+				{{ cv.basics.label }}
+			</h2>
+
+			<p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed px-4">
+				{{ cv.basics.summary }}
+			</p>
+		</div>
+
+		<div class="flex flex-col items-center w-screen sm:flex-row h-2/3 mx-4 px-4">
+			<div class="w-screen sm:basis-1/3">
+				<img src={{ cv.basics.image }} alt="image de sebastien maillet">
+			</div>
+
+			<div class="w-screen sm:basis-2/3 flex flex-col">
+				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
+					<div class="w-1/6 sm:w-1/3 sm:flex sm:justify-end">
+						<p class="w-6 sm:mx-4">
+							{{ ux_icon('streamline:web') }}
+						</p>
+					</div>
+					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+						<a href={{ cv.basics.url }}>
+							{{  cv.basics.url }}
+						</a>
+					</p>
+				</div>
+				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
+					<div class="w-1/6 sm:w-1/3 sm:flex sm:justify-end">
+						<p class="w-6 sm:mx-4">
+							{{ ux_icon('ph:phone-thin') }}
+						</p>
+					</div>
+					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+						{{  cv.basics.phone }}
+					</p>
+				</div>
+				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
+					<div class="w-1/6 sm:w-1/3 sm:flex sm:justify-end">
+						<div class="w-6 flex items-center sm:mx-4">
+							{{ ux_icon('iconamoon:email-thin') }}
+						</div>
+					</div>
+					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+						{{ cv.basics.email }}
+					</p>
+				</div>
+        				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
+					<div class="w-1/6 sm:w-1/3 sm:flex sm:justify-end">
+						<p class="w-6 sm:mx-4">
+							{{ ux_icon('icon-park-outline:local') }}
+						</p>
+					</div>
+					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+						{{ cv.basics.location.region }}
+					</p>
+				</div>
+				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
+					<div class="w-1/6 sm:w-1/3 sm:flex sm:justify-end">
+						<p class="w-6 sm:mx-4">
+							{{ ux_icon('ant-design:linkedin-outlined') }}
+						</p>
+					</div>
+					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+						<a href={{ cv.basics.profiles[0].url }}>
+							Sébastien MAILLET
+						</a>
+					</p>
+				</div>
+				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
+					<div class="w-1/6 sm:w-1/3 sm:flex sm:justify-end">
+						<p class="w-6 sm:mx-4">
+							{{ ux_icon('arcticons:git') }}
+						</p>
+					</div>
+					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+						<a href={{ cv.basics.profiles[1].url }}>
+							sebastien-76
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
