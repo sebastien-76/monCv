@@ -1,11 +1,11 @@
 <section class="bg-gray-900 text-white mx-auto">
 	<div class=" lg:flex lg:h-screen lg:items-center flex-col py-28">
 		<div class="mx-auto max-w-3xl text-center pb-6 w-screen h-1/3">
-			<h1 class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-7xl p-6">
+			<h1 class="bg-gradient-to-r from-indigo-400 via-purple-400 to-purple-800 bg-clip-text text-xl font-extrabold text-transparent p-6 sm:text-7xl">
 				{{ cv.basics.name }}
 			</h1>
 
-			<h2 class="text-2xl font-extrabold sm:text-4xl px-4">
+			<h2 class="text-xl font-extrabold sm:text-4xl px-4">
 				{{ cv.basics.label }}
 			</h2>
 
@@ -15,8 +15,11 @@
 		</div>
 
 		<div class="flex flex-col items-center w-screen sm:flex-row h-2/3 mx-4 px-4">
-			<div class="w-screen sm:basis-1/3">
-				<img src={{ cv.basics.image }} alt="image de sebastien maillet">
+			<div class="w-full sm:basis-1/3 flex justify-center sm:justify-end">
+				<article class="rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-purple-800 p-0.5 mx-10 sm:mx-4 mt-4 w-1/2">
+					<img src={{ asset('images/portrait.jpg') }} alt="image de sebastien maillet" class=" rounded-[10px] ">
+
+				</article>
 			</div>
 
 			<div class="w-screen sm:basis-2/3 flex flex-col">
@@ -26,7 +29,7 @@
 							{{ ux_icon('streamline:web') }}
 						</p>
 					</div>
-					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+					<p class="w-5/6 text-lg sm:w-2/3 sm:flex sm justify-start">
 						<a href={{ cv.basics.url }}>
 							{{  cv.basics.url }}
 						</a>
@@ -38,7 +41,7 @@
 							{{ ux_icon('ph:phone-thin') }}
 						</p>
 					</div>
-					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+					<p class="w-5/6 text-lg sm:w-2/3 sm:flex sm justify-start">
 						{{  cv.basics.phone }}
 					</p>
 				</div>
@@ -48,17 +51,17 @@
 							{{ ux_icon('iconamoon:email-thin') }}
 						</div>
 					</div>
-					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+					<p class="w-5/6 text-lg sm:w-2/3 sm:flex sm justify-start">
 						{{ cv.basics.email }}
 					</p>
 				</div>
-        				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
+				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
 					<div class="w-1/6 sm:w-1/3 sm:flex sm:justify-end">
 						<p class="w-6 sm:mx-4">
 							{{ ux_icon('icon-park-outline:local') }}
 						</p>
 					</div>
-					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+					<p class="w-5/6 text-lg sm:w-2/3 sm:flex sm justify-start">
 						{{ cv.basics.location.region }}
 					</p>
 				</div>
@@ -68,7 +71,7 @@
 							{{ ux_icon('ant-design:linkedin-outlined') }}
 						</p>
 					</div>
-					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+					<p class="w-5/6 text-lg sm:w-2/3 sm:flex sm justify-start">
 						<a href={{ cv.basics.profiles[0].url }}>
 							Sébastien MAILLET
 						</a>
@@ -80,10 +83,22 @@
 							{{ ux_icon('arcticons:git') }}
 						</p>
 					</div>
-					<p class="w-5/6 text-xl sm:w-2/3 sm:flex sm justify-start">
+					<p class="w-5/6 text-lg sm:w-2/3 sm:flex sm justify-start">
 						<a href={{ cv.basics.profiles[1].url }}>
 							sebastien-76
 						</a>
+					</p>
+				</div>
+				<div class="flex flex-row justify-around items-center sm:justify-center my-4">
+					<div class="w-1/6 sm:w-1/3 sm:flex sm:justify-end">
+						<p class="w-6 sm:mx-4">
+							{{ ux_icon('fluent:vehicle-car-profile-20-regular') }}
+						</p>
+					</div>
+					<p class="w-5/6 text-lg sm:w-2/3 sm:flex sm justify-start">
+						{{ cv.basics.permis.type }}
+						,
+						{{ cv.basics.permis.vehicule }}
 					</p>
 				</div>
 			</div>

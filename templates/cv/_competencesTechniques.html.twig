@@ -1,0 +1,21 @@
+<section class=" text-white bg-gray-900 py-4">
+	<div class="mx-auto text-center">
+		<h2 class="text-3xl font-bold lg:text-4xl py-4">Compétences techniques</h2>
+        <div class="sm:flex sm:flex-row sm:justify-around">
+		{% for skill in cv.skills %}
+			<article class="rounded-xl bg-gradient-to-r from-indigo-400 via-purple-400 to-purple-800 p-0.5 mx-10 sm:mx-0 mt-4 sm:flex sm:content-stretch sm:justify-stretch sm:w-1/6">
+				<div class="rounded-[10px] bg-gray-200 p-4 dark:bg-gray-900 sm:p-6 w-full">
+					<h3 class="mt-0.5 text-xl font-medium text-gray-900 dark:text-white pb-2">
+						{{ skill.name }}
+					</h3>
+					{% for keyword in skill.keywords %}
+						<p class="block text-base text-gray-600 dark:text-gray-300">
+							{{ keyword }}
+						</p>
+					{% endfor %}
+				</div>
+			</article>
+		{% endfor %}
+        </div>
+	</div>
+</section>
