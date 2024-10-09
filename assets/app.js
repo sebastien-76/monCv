@@ -10,5 +10,5 @@ import './styles/app.css';
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
 
 import Alpine from 'alpinejs';
-windows.Alpine = Alpine;
+window.Alpine = Alpine;
 Alpine.start();
