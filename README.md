@@ -1,15 +1,6 @@
 # Mon CV
 
-5eme projet symfony 7
-
-Création d'un cv
-
-- Utilisation de JSON Resume
-- Utilisation de Asset Mapper
-
-# Projet 5 formation symfony 7 s4 simplon
-
-Création d'un cv
+5eme projet formation symfony 7 : Création d'un cv
 
 - Utilisation de JSON Resume
 - Utilisation de Asset Mapper
