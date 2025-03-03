@@ -1,4 +1,4 @@
-# Mon CV
+# MonCV
 
 5eme projet formation symfony 7 : Création d'un cv
 
@@ -12,60 +12,22 @@
 - PHP 8
 - Composer
 - Symfony-cli
-- Mariadb 10
 
 ## Installation
 
 ```
-git clone https://github.com/sebastien-76/brainchat
-cd brainchat
+git clone https://github.com/sebastien-76/monCv.git
+cd monCv
 composer install
 
 ```
-Créer une base de données et un utilisateur dédié pour cette base de données.
-
-## Configuration
-
-Créer un fichier `.env.local` à la racine du projet
-
-```
-APP_ENV=dev
-APP_DEBUG=true
-APP_SECRET=123
-DATABASE_URL="mysql://user:password@127.0.0.1:3306/brainchat?serverVersion=mariadb-10.11.18&charset=utf8mb4"
-```
-
-Penser  à changer la variable `APP_SECRET` et les codes d'accès dans la variable `DATABASE_URL`.
-
-**ATTENTION : `APP_SECRET` doit être une chaîne de caractère de 32 caractères en hexadécimal.**
-
-## Migration et fixtures
-
-Pour que l'application soit utilisable, il faut créer le schéma de la base de données et charger les données.
-
-On utilise le script suivant :
-
-```
-./bin/dofilo.sh
-```
-
-## Mail
-Pour tester les fonctionalités utilisant le mail, on utilise mailpit
-
-On utilise le script suivant :
-
-```
-./bin/mailpit
-```
-
-Pour avoir accès aux mails envoyés par l'application, ouvrir la page suivante: [http://localhost:8025](http://localhost:8025)
-
 
 ## Utilisation
 Lancer le serveur web de développement :
 
 ```
 symfony serve -d
+
 ```
 
 Puis ouvrir la page suivante : [https://localhost:8000](https://localhost:8000)
