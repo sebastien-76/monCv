@@ -61,6 +61,16 @@
     ],
     "education": [
         {
+            "institution": "Simplon - Valenciennes",
+            "area": "MS Développeur PHP",
+            "studyType": "Module de specialisation",
+            "startDate": "Novembre 2024",
+            "endDate": "Janvier 2025",
+            "courses": [
+                "PHP - Symfony - Mariadb - Git - Docker - Tailwindcss"
+            ]
+        },
+        {
             "institution": "Pop School - Lens",
             "area": "Développeur Web et Web Mobile",
             "studyType": "Titre professionnel",
