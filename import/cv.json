@@ -61,6 +61,16 @@
     ],
     "education": [
         {
+            "institution": "Simplon - Lens",
+            "area": "MS Développeur Front-end",
+            "studyType": "Module de specialisation",
+            "startDate": "Juin 2025",
+            "endDate": "Aout 2025",
+            "courses": [
+                "JS - Figma - Git"
+            ]
+        },
+        {
             "institution": "Simplon - Valenciennes",
             "area": "MS Développeur PHP",
             "studyType": "Module de specialisation",
@@ -146,7 +156,8 @@
                 "Github",
                 "Visual Studio Code",
                 "Insomnia",
-                "Docker"
+                "Docker",
+                "Figma"
             ]
         },
         {
