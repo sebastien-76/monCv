@@ -15,8 +15,19 @@ jobs:
         with:
           extensions: mbstring, xml, ctype, iconv, intl, pdo, pdo_mysql, dom, filter, gd, iconv, json, mbstring, pdo
 
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: |
+          echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+        uses: actions/cache@v6
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+          ${{ runner.os }}-composer-
+
       - name: Cache multiple paths
-        uses: actions/cache@v2
+        uses: actions/cache@v6
         with:
           path: |
             vendor
