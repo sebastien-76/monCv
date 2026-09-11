@@ -13,7 +13,7 @@ class CVController extends AbstractController
     {
         $projectDir = $this->getParameter('kernel.project_dir');
 
-        $cvJson = file_get_contents($projectDir . '/import/cv.json');
+        $cvJson = file_get_contents($projectDir.'/import/cv.json');
 
         $cv = json_decode($cvJson, true);
 
