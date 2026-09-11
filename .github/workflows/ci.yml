@@ -44,3 +44,9 @@ jobs:
         run: |
           composer require friendsofphp/php-cs-fixer
           ./vendor/bin/php-cs-fixer -v check
+
+      # PHPStan
+      - name: PHPStan
+        run: |
+          composer require --dev phpstan/phpstan
+          ./vendor/bin/phpstan analyse src --memory-limit 1G
