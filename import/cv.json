@@ -6,7 +6,7 @@
         "email": "sebastien.maillet@gmail.com",
         "phone": "06 16 98 56 38",
         "url": "https://www.sebastienmaillet.fr",   
-        "summary": "En recherche d'une alternance en développement informatique",
+        "summary": "En recherche d'un poste de développeur symfony, développeur web ou d'une alternance CDA",
         "location": {
             "city": "HULLUCH",
             "countryCode": "FR",
@@ -29,13 +29,23 @@
     },
     "work": [
         {
+            "name": "Triyo lab, association, distanciel",
+            "position": "Développeur symfony, Bénévole",
+            "startDate": "Février 2026",
+            "endDate": "Août 2026",
+            "summary": "Refonte du back-office organisme de formation, Refonte de formulaires",
+            "highlights": [
+                "Symfony, Twig, MariaDB, Jira, Behat"
+            ]
+        },
+        {
             "name": "Boulanger Philippe, commerçant ambulant, Chocques",
-            "position": "Développeur web",
+            "position": "Développeur web, Stage",
             "startDate": "Octobre 2023",
             "endDate": "Novembre 2023",
-            "summary": "Réalisation d’un site web responsive ( HTML, CSS, React ) - Réalisation d'une interface d’administration de gestion de contenu ( Symfony, EasyAdmin, ApiPlatform, Mariadb )",
+            "summary": "Développement d'un site web responsive avec React et Symfony, intégrant une interface d'administration et une API REST.",
             "highlights": [
-                "Dans l'attente du commercant pour terminer le site"
+                "Abandonné par le commerçant"
             ]
         },
         {
@@ -50,7 +60,7 @@
         },
         {
             "name": "Stéria, Paris",
-            "position": "Analyste d'exploitation",
+            "position": "Analyste d'exploitation, CDI",
             "startDate": "Avril 2001",
             "endDate": "Mars 2009",
             "summary": "En mission chez SFR - Contrôle et surveillance des opérations d'exploitation - Détection et résolution des incidents, ou escalade si nécessaire - Responsable d'une équipe de six personnes",
@@ -126,7 +136,10 @@
             "keywords": [
                 "HTML",
                 "CSS",
-                "JavaScript"
+                "JavaScript",
+                "React",
+                "Tailwindcss",
+                "Vitest"
             ]
         },
         {
@@ -136,8 +149,7 @@
                 "PHP",
                 "Symfony",
                 "Apiplatform",
-                "Python",
-                "NodeJs"
+                "PHPUnit"
             ]
         },
         {
@@ -164,7 +176,8 @@
             "name": "Gestion de projet",
             "level": "Master",
             "keywords": [
-                "Trello"
+                "Trello",
+                "Jira"
             ]
         }
     ],

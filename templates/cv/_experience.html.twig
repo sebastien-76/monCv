@@ -11,12 +11,18 @@
 					</p>
 					<h3 class="mt-0.5 text-xl font-medium text-gray-900 dark:text-white">
 						{{ work.position }}
-						-
+					</h3>
+					<h3 class="mt-0.5 text-xl font-medium text-gray-900 dark:text-white">
 						{{ work.name }}
 					</h3>
-                    <p class="block text-base text-gray-600 dark:text-gray-300">
-                        {{ work.summary }}
-                    </p>
+					<p class="block text-base text-gray-600 dark:text-gray-300">
+						{{ work.summary }}
+					</p>
+					{% for highlight in work.highlights %}
+						<p class="block text-base text-gray-600 dark:text-gray-300 italic">
+							{{ highlight }}
+						</p>
+					{% endfor %}
 				</div>
 			</article>
 		{% endfor %}
