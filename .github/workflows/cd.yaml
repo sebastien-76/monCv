@@ -11,10 +11,10 @@ jobs:
       - name: Deploy Over SSH
         uses: appleboy/ssh-action@v1.2.5
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.PORT }}
+          port: ${{ secrets.SSH_PORT }}
           script: |
             pwd
             ls
