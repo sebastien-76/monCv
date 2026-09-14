@@ -10,12 +10,12 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Deploy Over SSH
-        uses: LuisEnMarroquin/setup-ssh-action@v3.0.0
+        uses: appleboy/ssh-action@v1
         with:
-          ORIGIN: ${{ secrets.HOST }}
-          SSHKEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          NAME: production
-          PORT: ${{ secrets.PORT }}
-          USER: ${{ secrets.USER }}
-      - name: connexion ssh
-        run: ssh -p $PORT $USER@$ORIGIN
+          host: ${{ secrets.HOST }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.PORT }}
+          username: ${{ secrets.USER }}
+          script: |
+            pwd
+            ls
