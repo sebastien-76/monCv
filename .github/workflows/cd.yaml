@@ -10,12 +10,12 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Deploy Over SSH
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.2.5
         with:
           host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.PORT }}
-          username: ${{ secrets.USER }}
           script: |
             pwd
             ls
