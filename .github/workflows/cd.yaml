@@ -17,6 +17,5 @@ jobs:
           SSHKEY: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           run: |
-            ssh -T git@github.com || true
             whoami
             ls -al
