@@ -17,10 +17,11 @@ jobs:
           NAME: production
           PORT: ${{ secrets.PORT }}
           USER: ${{ secrets.USER }}
-      - name: Check key structure
+      - name: Check line endings and permissions
         run: |
-          head -c 60 /home/runner/.ssh/access
-          echo "---"
-          wc -l /home/runner/.ssh/access
+          file /home/runner/.ssh/access
+          cat -A /home/runner/.ssh/access | head -3
+          cat -A /home/runner/.ssh/access | tail -3
+          ls -la /home/runner/.ssh/access
       - run: ssh production
       - run: pwd
