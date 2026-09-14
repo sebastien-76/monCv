@@ -10,11 +10,11 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: Deploy Over SSH
-        uses: LuisEnMarroquin/setup-ssh-action@v3.0.0
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
-          SSHKEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           run: |
             whoami
