@@ -17,11 +17,5 @@ jobs:
           NAME: production
           PORT: ${{ secrets.PORT }}
           USER: ${{ secrets.USER }}
-      - name: Check line endings and permissions
-        run: |
-          file /home/runner/.ssh/access
-          cat -A /home/runner/.ssh/access | head -3
-          cat -A /home/runner/.ssh/access | tail -3
-          ls -la /home/runner/.ssh/access
-      - run: ssh production
-      - run: pwd
+      - name: connexion ssh
+        run: ssh -p ${{ secrets.PORT }} ${{ secrets.USER }}@${{ secrets.HOST }}
