@@ -17,7 +17,10 @@ jobs:
           NAME: production
           PORT: ${{ secrets.PORT }}
           USER: ${{ secrets.USER }}
-      - name: Debug key
-        run: ssh-keygen -y -f /home/runner/.ssh/access
+      - name: Check key structure
+        run: |
+          head -c 60 /home/runner/.ssh/access
+          echo "---"
+          wc -l /home/runner/.ssh/access
       - run: ssh production
       - run: pwd
